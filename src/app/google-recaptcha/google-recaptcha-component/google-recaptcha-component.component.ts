@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'google-recaptcha-component',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./google-recaptcha-component.component.css']
 })
 export class GoogleRecaptchaComponent implements OnInit {
-
+  @Input() siteKey: string;
+  
   constructor(){ }
 
   ngOnInit(){

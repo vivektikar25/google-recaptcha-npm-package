@@ -9,9 +9,10 @@ import { GoogleRecaptchaComponent } from './google-recaptcha/google-recaptcha-co
 export class AppComponent {
   @ViewChild(GoogleRecaptchaComponent) googleRecaptchaComponent:GoogleRecaptchaComponent;
   title = 'app works!';
-  
-  constructor() {
+  siteKey: string;
 
+  constructor() {
+    this.siteKey = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
   }
 
   getResponse = () => {
